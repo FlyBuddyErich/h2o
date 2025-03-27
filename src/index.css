@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+      @apply font-sans text-gray-800;
+    }
+  }
+  
+  @layer components {
+    .nav-icon {
+      @apply  text-white opacity-80 hover:opacity-100 transition-opacity;
+    }
+  
+    .tab {
+      @apply px-4 py-3 text-sm text-gray-500 border-b-2 border-transparent hover:text-gray-700 cursor-pointer;
+    }
+  
+    .tab.active {
+      @apply text-teal-500 border-teal-500 border-b-2;
+    }
+  
+    .card {
+      @apply bg-white rounded-lg shadow-sm p-4;
+    }
+  
+    .problem-item {
+      @apply flex items-center gap-3 py-2;
+    }
+  }
